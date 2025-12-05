@@ -9,7 +9,7 @@ O projeto foi desenhado para ser **extremamente flexível**, permitindo o uso de
 
 Possui uma interface web moderna, focada na legibilidade e simplicidade.
 
-##Funcionalidades
+## Funcionalidades
 
 - **Batalha de IAs**: Coloque perspectivas diferentes (persona Curiosa vs Cética) para debater.
 - **Interface Otimizada**: Design limpo, com fontes grandes e alto contraste para fácil leitura.
