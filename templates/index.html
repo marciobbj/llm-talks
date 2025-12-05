@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Talks - AI Conversation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>LLM Talks</h1>
+        <div id="status-indicator">Ready</div>
+    </header>
+
+    <main>
+        <div id="chat-container">
+            <!-- Messages will be inserted here -->
+            <div id="typing-indicator" class="typing">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="control-panel">
+            <input type="text" id="topic-input"
+                placeholder="Enter a topic needed (e.g. The future of Mars colonization)..."
+                value="The future of Artificial General Intelligence">
+            <button id="start-btn">Start Discussion</button>
+            <button id="pause-btn" disabled>Pause</button>
+            <button id="clear-btn" class="secondary">Clear Messages</button>
+            <button id="export-btn" class="secondary">Export PNG</button>
+        </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>
